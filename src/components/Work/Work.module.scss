@@ -1,0 +1,199 @@
+@import "../../styles/contants.scss";
+
+
+.wrapper {
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+
+    h1 {
+      @media (max-width: 778px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 661px) {
+        font-size: 2.4rem;
+      }
+
+      @media (max-width: 632px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 588px) {
+        font-size: 2.3rem;
+      }
+
+      @media (max-width: 549px) {
+        font-size: 2.2rem;
+      }
+
+      @media (max-width: 531px) {
+        font-size: 2.1rem;
+      }
+
+      @media (max-width: 503px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 484px) {
+        font-size: 1.9rem;
+      }
+
+      @media (max-width: 461px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 444px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 441px) {
+        font-size: 1.7rem;
+      }
+
+      @media (max-width: 423px) {
+        font-size: 1.6rem;
+      }
+
+      @media (max-width: 399px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 388px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .experiences {
+      width: 100%;
+      flex-direction: column;
+      gap: 1.4rem;
+      position: relative;
+
+      .exp {
+        width: 100%;
+        justify-content: space-between;
+        line-height: 40px;
+        align-items: flex-start;
+        
+
+        > div {
+          flex: 1;
+        }
+
+        .role {
+          margin-left: 2rem;
+        }
+
+        .post {
+          width: fit-content;
+          text-align: center;
+
+          h1 {
+            background-color: #127551;
+            width: fit-content;
+            margin: auto;
+            padding: 10px 30px;
+            border-radius: 10px;
+            color: white;
+            @media (max-width: 778px) {
+              font-size: 2.5rem;
+            }
+      
+            @media (max-width: 661px) {
+              font-size: 2.4rem;
+            }
+      
+            @media (max-width: 632px) {
+              font-size: 2.5rem;
+            }
+      
+            @media (max-width: 588px) {
+              font-size: 2.3rem;
+            }
+      
+            @media (max-width: 549px) {
+              font-size: 2.2rem;
+            }
+      
+            @media (max-width: 531px) {
+              font-size: 2.1rem;
+            }
+      
+            @media (max-width: 503px) {
+              font-size: 2rem;
+            }
+      
+            @media (max-width: 484px) {
+              font-size: 1.9rem;
+            }
+      
+            @media (max-width: 461px) {
+              font-size: 1.8rem;
+            }
+      
+            @media (max-width: 444px) {
+              font-size: 1.8rem;
+            }
+      
+            @media (max-width: 441px) {
+              font-size: 1.7rem;
+            }
+      
+            @media (max-width: 423px) {
+              font-size: 1.6rem;
+            }
+      
+            @media (max-width: 399px) {
+              font-size: 1.5rem;
+            }
+      
+            @media (max-width: 388px) {
+              font-size: 1.4rem;
+            }
+          }
+         
+        }
+      }
+
+      .progressbar {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        left: 45%;
+
+        .line {
+          position: absolute;
+          height: 92%;
+          width: 2px;
+          background-image: linear-gradient(
+            black 33%,
+            rgba(255, 255, 255, 0) 0%
+          );
+          background-position: right;
+          background-size: 2px 30px;
+          background-repeat: repeat-y;
+          left: 48%;
+          z-index: 1;
+          border-radius: 5px;
+        }
+
+        > div {
+          flex: 1;
+          padding-top: 0.8rem;
+          z-index: 2;
+
+          .circle {
+            border-radius: 50%;
+            background: black;
+            width: 1.2rem;
+            height: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+

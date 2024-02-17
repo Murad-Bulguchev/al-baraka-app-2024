@@ -1,0 +1,239 @@
+@import "../../styles/contants.scss";
+.rightSide {
+  max-width: fit-content;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 600px) {
+    padding: 0.3rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.7rem;
+
+    @media (max-width: 600px) {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+
+  .formContact {
+    padding: 10px;
+    border-radius: 1000px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin: auto;
+    display: flex;
+
+    li {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 10px;
+      cursor: pointer;
+      width: 8rem;
+      border-radius: 1000px;
+
+      @media (max-width: 600px) {
+        width:min-content;
+      }
+    }
+    .active {
+      background: #167852;
+      color: white;
+      transition: 0.3s;
+    }
+
+    button {
+      background: #167852;
+      border: none;
+      color: white;
+      font-size: 16px;
+    }
+  }
+
+  .consultFormContent {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    input {
+      width: 390px;
+      height: 60px;
+      margin: 10px;
+      border: 1px solid #2b8d58;
+      border-radius: 10px;
+      padding: 20px;
+      outline: none;
+      font-size: 16px;
+
+      @media (max-width: 600px) {
+        padding: 0.9rem;
+        width: 340px;
+        margin: 0 auto;
+      }
+    }
+
+    ::placeholder {
+      font-size: 15px;
+    }
+
+    .submitBtn {
+      cursor: pointer;
+      background: rgb(20, 143, 43);
+      font-weight: 600;
+      margin: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+      border: none;
+
+      @media (max-width: 600px) {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      &:active {
+        background-image: linear-gradient(
+          to right,
+          #02b050c7 0%,
+          #2b8d78 71%,
+          #10c263 100%
+        );
+      }
+
+
+    }
+  }
+
+  span {
+    text-align: center;
+    margin-top: -1.2rem;
+    font-size: 20px;
+
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
+  }
+
+  .stats {
+    justify-content: flex-start;
+    gap: 4rem;
+
+    .stat {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  .ToastContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+      color: black;
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+      color: black;
+    }
+  }
+}
+.parentTitle {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3rem;
+  @media (max-width: 778px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 661px) {
+    font-size: 2.4rem;
+  }
+
+  @media (max-width: 632px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 588px) {
+    font-size: 2.3rem;
+  }
+
+  @media (max-width: 549px) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: 531px) {
+    font-size: 2.1rem;
+  }
+
+  @media (max-width: 503px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 484px) {
+    font-size: 1.9rem;
+  }
+
+  @media (max-width: 461px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 444px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 441px) {
+    font-size: 1.7rem;
+  }
+
+  @media (max-width: 423px) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: 399px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 388px) {
+    font-size: 1.4rem;
+  }
+}
+
+.parentDescription {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 10px;
+
+}
+
+.modalContainer {
+  background-color: white !important;
+  padding: 10px;
+  border-radius: 10px;
+  span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+  }
+
+}

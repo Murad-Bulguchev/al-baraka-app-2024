@@ -1,0 +1,125 @@
+@import "../../styles/contants.scss";
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+.availableFast {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+
+
+  img {
+    padding: 1rem;
+  }
+
+  h1 {
+    margin-top: 5rem;
+    @media (max-width: 778px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 661px) {
+      font-size: 2.4rem;
+    }
+
+    @media (max-width: 632px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 588px) {
+      font-size: 2.3rem;
+    }
+
+    @media (max-width: 549px) {
+      font-size: 2.2rem;
+    }
+
+    @media (max-width: 531px) {
+      font-size: 2.1rem;
+    }
+
+    @media (max-width: 503px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 484px) {
+      font-size: 1.9rem;
+    }
+
+    @media (max-width: 461px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 444px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 441px) {
+      font-size: 1.7rem;
+    }
+
+    @media (max-width: 423px) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 399px) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 388px) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.availableFastText {
+  font-size: 1.4rem;
+  padding-top: 10px;
+}
+
+.howContent {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+
+  .howItem {
+    
+    position: relative;
+    border-radius: 1rem;
+    padding: 2rem 0px;
+    width: 100%;
+    background: $main-block-bg-color;
+    box-shadow: 0 0 20px $bg-main-color;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-white;
+
+    p {
+      font-size: 1.3rem;
+      color: white;
+
+      @media (max-width: 500px) {
+        font-size: 1rem;
+      }
+    }
+
+    img {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100px;
+      height: 100px;
+      bottom: 0px;
+      right: -20px;
+    }
+  }
+}

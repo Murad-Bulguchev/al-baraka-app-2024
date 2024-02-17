@@ -1,0 +1,162 @@
+@import "../../styles/contants.scss";
+
+.wrapper {
+  background: $bg-main-color;
+  overflow: hidden;
+  .container {
+    h1 {
+      @media (max-width: 778px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 661px) {
+        font-size: 2.4rem;
+      }
+
+      @media (max-width: 632px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 588px) {
+        font-size: 2.3rem;
+      }
+
+      @media (max-width: 549px) {
+        font-size: 2.2rem;
+      }
+
+      @media (max-width: 531px) {
+        font-size: 2.1rem;
+      }
+
+      @media (max-width: 503px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 484px) {
+        font-size: 1.9rem;
+      }
+
+      @media (max-width: 461px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 444px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 441px) {
+        font-size: 1.7rem;
+      }
+
+      @media (max-width: 423px) {
+        font-size: 1.6rem;
+      }
+
+      @media (max-width: 399px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 388px) {
+        font-size: 1.4rem;
+      }
+    }
+    flex-direction: column;
+    gap: 2rem;
+    .heading {
+      width: 100%;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      > :nth-child(2) {
+        text-decoration: underline;
+        color: orange;
+        cursor: pointer;
+      }
+    }
+
+    .showContainer {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2rem;
+
+      @media (max-width: 1450px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      @media (max-width: 1095px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media (max-width: 753px) {
+        grid-template-columns: 1fr;
+      }
+      .figure {
+        width: 315px;
+
+      }
+
+      figure {
+        background-color: #f8f7f1;
+        max-width: 330px;
+        height: 520px;
+        border-radius: 50px;
+        padding: 10px 30px;
+        box-shadow: 0 1px 2px rgba(38, 38, 38, 0.062),
+          0 2px 4px rgba(38, 38, 38, 0.308);
+        transition: 0.3s;
+        &:hover {
+          box-shadow: 0 4px 30px rgba(8, 182, 88, 0.37);
+        }
+
+        figcaption {
+          width: 100%;
+          text-align: center;
+          margin-top: 10px;
+          b {
+            font-size: 22px;
+          }
+
+          .price {
+            margin-top: 10px;
+            font-size: 20px;
+          }
+        }
+
+        .mainCallBtn {
+          &:active {
+            background-image: linear-gradient(
+              to right,
+              #02b050c7 0%,
+              #2b8d78 71%,
+              #10c263 100%
+            );
+          }
+          cursor: pointer;
+          background: rgb(20, 143, 43);
+          font-weight: 600;
+          margin: 10px;
+          padding: 20px 45px;
+          text-align: center;
+          text-transform: uppercase;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;
+          border-radius: 10px;
+          display: block;
+          margin-left: 25px;
+          margin: auto;
+          border: none;
+  
+          margin-top: 10px;
+        }
+      }
+
+      img {
+        display: flex;
+        margin: auto;
+      }
+    }
+  }
+}

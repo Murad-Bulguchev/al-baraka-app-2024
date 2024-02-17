@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    font-size: 22px;
+    margin: 0 auto;
+
+    h1 {
+      @media (max-width: 778px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 661px) {
+        font-size: 2.4rem;
+      }
+
+      @media (max-width: 632px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 588px) {
+        font-size: 2.3rem;
+      }
+
+      @media (max-width: 549px) {
+        font-size: 2.2rem;
+      }
+
+      @media (max-width: 531px) {
+        font-size: 2.1rem;
+      }
+
+      @media (max-width: 503px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 484px) {
+        font-size: 1.9rem;
+      }
+
+      @media (max-width: 461px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 444px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 441px) {
+        font-size: 1.7rem;
+      }
+
+      @media (max-width: 423px) {
+        font-size: 1.6rem;
+      }
+
+      @media (max-width: 399px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 388px) {
+        font-size: 1.4rem;
+      }
+    }
+    .mainCallBtn {
+      &:active {
+        background-image: linear-gradient(
+          to right,
+          #02b050c7 0%,
+          #2b8d78 71%,
+          #10c263 100%
+        );
+      }
+      cursor: pointer;
+      background: rgb(20, 143, 43);
+      margin: 10px;
+      padding: 25px 55px;
+      text-align: center;
+      outline: none;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      font-weight: 600;
+      border-radius: 10px;
+      display: block;
+      border: none;
+      &:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        scale: 1.05;
+      }
+    }
+  }
+
+  ul {
+    padding: 20px;
+
+    li {
+      padding: 10px;
+      line-height: 1.3;
+      font-size: 20px;
+    }
+  }
+
+  .right {
+    position: relative;
+    display: grid;
+
+    .img1 {
+      transition: 0.3s;
+      place-self: center;
+      &:hover {
+        scale: 1.1;
+      }
+
+      @media (max-width: 1200px) {
+        width: 500px;
+      }
+    }
+
+    .img2 {
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      transition: 0.3s;
+      &:hover {
+        scale: 1.1;
+      }
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    .img3 {
+      position: absolute;
+      right: 0px;
+      bottom: 1rem;
+      transition: 0.3s;
+      &:hover {
+        scale: 1.1;
+      }
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
+}
