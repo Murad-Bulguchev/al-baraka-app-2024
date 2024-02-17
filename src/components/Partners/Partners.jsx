@@ -32,7 +32,11 @@ const Partners = () => {
                 return (
                   <div key={i} className={`flexCenter ${css.comment}`}>
                     <div className={css.imgWrapper}>
-                      <img loading="lazy" src={partner.img} alt="" />
+                      <img
+                        loading="lazy"
+                        src={partner.img}
+                        alt="партнеры al-baraka"
+                      />
                     </div>
                     <div className={css.info}>
                       <p className={css.partnerTitle}>{partner.title}</p>

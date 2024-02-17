@@ -41,7 +41,7 @@ const Main = () => {
             width={230}
             variants={slideIn("up", "tween", 0.5, 1.3)}
             src="./person.png"
-            alt=""
+            alt="рассрочка без банка на товары по нормам Ислама"
             loading="lazy"
           />
         </motion.div>
@@ -81,7 +81,12 @@ const Main = () => {
           </motion.div>
         </div>
       </motion.div>
-      {isOpen && <Modal title="Оставьте заявку для получения PDF-файла со списком партнеров" setIsOpen={setIsOpen} />}
+      {isOpen && (
+        <Modal
+          title="Оставьте заявку для получения PDF-файла со списком партнеров"
+          setIsOpen={setIsOpen}
+        />
+      )}
     </section>
   );
 };

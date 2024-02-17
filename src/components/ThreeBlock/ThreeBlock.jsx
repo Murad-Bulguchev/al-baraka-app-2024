@@ -14,7 +14,10 @@ const ThreeBlock = () => {
   };
   return (
     <section className={` ${styles.threeBlockContainer}`}>
-      <h1 className="primaryText"><span style={{color: '#148F2B'}}>3 простых шага</span> к получению желаемого товара</h1>
+      <h1 className="primaryText">
+        <span style={{ color: "#148F2B" }}>3 простых шага</span> к получению
+        желаемого товара
+      </h1>
       <div className={styles.threeBlockItemsList}>
         <div className={styles.ThreeBlockItem}>
           <span className={styles.threeBlockItemTitle}>
@@ -23,22 +26,19 @@ const ThreeBlock = () => {
           <p className={styles.threeBlockItemDescription}>
             Займет не более 2-х минут
           </p>
-          <button
-           onClick={handleOpenModal}
-            className={styles.mainCallBtn}
-          >
+          <button onClick={handleOpenModal} className={styles.mainCallBtn}>
             Заполните анкету
           </button>
-          <img loading="lazy" src={icon1} alt="" />
+          <img loading="lazy" src={icon1} />
         </div>
         <div className={styles.ThreeBlockItem}>
           <span className={styles.threeBlockItemTitle}>
             Узнайте решение за 15 минут не выходя из дома
           </span>
           <p className={styles.threeBlockItemDescription}>
-            Наш специалист сразу свяжется с вами <br/>и расскажет решение
+            Наш специалист сразу свяжется с вами <br />и расскажет решение
           </p>
-          <img loading="lazy" src={icon2} alt="" />
+          <img loading="lazy" src={icon2} />
         </div>
         <div className={styles.ThreeBlockItem}>
           <span className={styles.threeBlockItemTitle}>
@@ -47,10 +47,15 @@ const ThreeBlock = () => {
           <p className={styles.threeBlockItemDescription}>
             В магазине лично или закажите доставку на дом
           </p>
-          <img loading="lazy" src={icon3} alt="" />
+          <img loading="lazy" src={icon3} />
         </div>
       </div>
-      {isOpen && <Modal title="Оставьте заявку, мы свяжемся с вами для получения рассрочки" setIsOpen={setIsOpen} />}
+      {isOpen && (
+        <Modal
+          title="Оставьте заявку, мы свяжемся с вами для получения рассрочки"
+          setIsOpen={setIsOpen}
+        />
+      )}
     </section>
   );
 };

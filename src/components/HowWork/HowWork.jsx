@@ -15,20 +15,22 @@ const HowWork = () => {
           Примерное время рассмотрения заявки на рассрочку для новых клиентов
           <span style={{ fontWeight: "bold" }}> - 45 минут</span>
         </div>
-        <h1 className="primaryText">Узнайте, <span style={{color: '#148F2B'}}>как мы работаем</span></h1>
+        <h1 className="primaryText">
+          Узнайте, <span style={{ color: "#148F2B" }}>как мы работаем</span>
+        </h1>
         <div className={css.howContent}>
           <div className={css.howItem}>
             <p>
               Наша деятельность основана на <br /> исламском контракте Мурабаха
             </p>
-            <img loading="lazy" src={logo1} alt="" />
+            <img loading="lazy" src={logo1} />
           </div>
           <div className={css.howItem}>
             <p>
               Штрафы, пени, сборы, страховки <br /> и скрытые платежи -
               отсутствуют
             </p>
-            <img loading="lazy" src={logo2} alt="" />
+            <img loading="lazy" src={logo2} />
           </div>
           <div className={css.howItem}>
             <p>
@@ -36,14 +38,15 @@ const HowWork = () => {
               <br /> в магазине-партнере и перепродаем в <br /> рассрочку с
               фиксированной наценкой
             </p>
-            <img loading="lazy" src={logo3} alt="" />
+            <img loading="lazy" src={logo3} />
           </div>
           <div className={css.howItem}>
             <p>
-              На всех тарифах действует <br /> фиксированный размер наценки <br />
+              На всех тарифах действует <br /> фиксированный размер наценки{" "}
+              <br />
               весь период рассрочки
             </p>
-            <img loading="lazy" src={logo4} alt="" />
+            <img loading="lazy" src={logo4} />
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const Investment = () => {
             <img
               width={200}
               src="https://dzort.ru/assets/img/logo.svg"
-              alt=""
+              alt="dzort.ru"
               loading="lazy"
             />
           </h1>
@@ -23,7 +23,7 @@ const Investment = () => {
           </a>
         </div>
         <div className={css.right}>
-          <img loading="lazy" className={css.invImage} width={500} src={INV} alt="" />
+          <img loading="lazy" className={css.invImage} width={500} src={INV} />
         </div>
       </div>
     </div>
