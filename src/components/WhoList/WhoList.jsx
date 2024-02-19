@@ -34,12 +34,34 @@ const WhoList = () => {
           </button>
         </div>
         <div className={css.right}>
-          <img loading="lazy" className={css.img1} width={700} src={img1} alt="" />
-          <img loading="lazy" className={css.img2} width={160} src={img2} alt="" />
-          <img loading="lazy" className={css.img3} src={img3} alt="" />
+          <img
+            loading="lazy"
+            className={css.img1}
+            width={700}
+            src={img1}
+            alt="macbook"
+          />
+          <img
+            loading="lazy"
+            className={css.img2}
+            width={160}
+            src={img2}
+            alt="wheel"
+          />
+          <img
+            loading="lazy"
+            className={css.img3}
+            src={img3}
+            alt="apple_whatch"
+          />
         </div>
       </div>
-      {isOpen && <Modal title="Оставьте заявку, мы свяжемся с вами для получения рассрочки" setIsOpen={setIsOpen} />}
+      {isOpen && (
+        <Modal
+          title="Оставьте заявку, мы свяжемся с вами для получения рассрочки"
+          setIsOpen={setIsOpen}
+        />
+      )}
     </div>
   );
 };
